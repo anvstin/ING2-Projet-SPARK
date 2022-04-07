@@ -17,3 +17,12 @@ The detection of case to send an alert must be as rapid as possible.
 We need to avoid the spread of the lack of peace and stop the troublemaker as quicky as possible.
 We will then use a real-time monitoring consumer to allow the management of the data quickly and efficiently.
 
+## Question 3
+
+The Peaceland team is composed only of Data Scientists. For a project that meets such expectations, it appears that combining Data Analyst, Data Engineer or Architect and finally Data DevOps with Data Scientist is essential. 
+
+By the lack of Data Engineer/Architect in their team, it is possible that their choice related to storage was inappropriate. For example, if their team chooses an SQL approach, there are several problems such as: 
+
+* Very ill-suited solution to this type of situation 
+* Difficult to scale  
+* Slow to write large volumes of small data 
