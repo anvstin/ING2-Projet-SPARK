@@ -1,0 +1,20 @@
+version: '2'
+services:
+  drone-processing:
+    build: 
+      context: ./
+      dockerfile: drone-processing/Dockerfile
+    environment:
+      BOOTSTRAP_SERVER: "broker:29092"
+  
+  drone-simulator:
+    build:
+      context: ./
+      dockerfile: drone-simulator/Dockerfile
+    environment:
+      BOOTSTRAP_SERVER: "broker:29092"
+
+networks:
+  default:
+    external: true
+    name: kafka-network
