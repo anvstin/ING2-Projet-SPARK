@@ -1,0 +1,15 @@
+{
+  "name": "HDFS-Drones",
+  "config": {
+    "connector.class": "io.confluent.connect.hdfs.HdfsSinkConnector",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "topics": "drone-states, emergency-situations",
+    "flush.size": "16384",
+    "store.url": "hdfs://namenode:9000",
+    "format.class": "io.confluent.connect.hdfs.json.JsonFormat",
+    "topics.dir": "topics",
+    "key.converter.schemas.enable": "false",
+    "value.converter.schemas.enable": "false"
+  }
+}
