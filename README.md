@@ -1,4 +1,10 @@
-# SPARK
+# ING2-Projet-SPARK
+
+To launch the application, run the following commands:
+```bash
+./setup.sh
+./start.sh
+```
 
 ## Subject
 
